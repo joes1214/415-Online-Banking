@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Online Banking</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+		<style>
+		
+			#adminHeaderMessage{
+				font-family: sans-serif;
+				color: black;
+				border-bottom: 1px solid #000000;
+				text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				text-align: center;
+				font-size: 30px;
+				padding-top: 10px;
+			}
+			#adminContainer1{
+				margin: 0 auto;
+				width: 500px;
+				height: 500px;
+				background: rgba(235,23,23);
+				box-shadow: 10px 10px 5px grey;
+				border-radius: 10px; 
+				border-color: black;
+			}
+			.adminContainer2{
+				margin: 0 auto;
+				background: white;
+				width: 430px;
+				height: 400px;
+				color: black;
+				font-family: sans-serif;
+				border-radius: 10px;
+			}
+			#adminLoginContainer{
+				padding-left: 15px;
+				padding-top: 30px;
+			}
+			#adminLoginBtn{
+				float: right; 
+				margin-right: 80px; 
+				width: 100px; 
+				height: 25px; 
+				text-align: center;
+				font-family: sans-serif;
+			}
+			#adminLoginBtn:hover{
+				opacity: 0.6;
+			}
+			#adminlinksNavi{
+				text-align: center;
+				margin-top: 100px;
+			}
+		</style>
+	</head>
+  <body>
+
+		<div id = "adminContainer1">
+			<h3 id= "adminHeaderMessage"> Online Banking </h3>
+			<div class = "adminContainer2">
+				<h4 style = "font-size: 25px; padding-top: 25px; text-align: center;"> Admin Login <h4>
+					<form id = "adminLoginContainer">
+						
+						<label for="userName">Username:</label>
+						<br>
+						<input type="text" style= "width: 250px;" id="userName"  autocomplete="off"><br>
+						<br>
+
+						<label for="passWord">Password:</label>
+						<br>
+						<input style= "width: 250px;" type="password" id="passWord" autocomplete="off">
+					</form>
+					<br>
+
+					<button id = "adminLoginBtn" onclick= "window.location.href = 'adminPortal.html'">Log In</button>
+
+					<div id = "adminlinksNavi"> 
+						<a href="index.html">Customer Login</a>
+						|
+						<a href=" ">Contact Support </a>
+						|
+						<a href=" ">Forgot Password</a>
+					</div> 
+			</div> 
+		</div>
+  </body>
+</html>
