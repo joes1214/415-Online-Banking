@@ -7,7 +7,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
 		<style>
 		
-			#headerMessage{
+			#adminHeaderMessage{
 				font-family: sans-serif;
 				color: black;
 				border-bottom: 1px solid #000000;
@@ -16,7 +16,7 @@
 				font-size: 30px;
 				padding-top: 10px;
 			}
-			#container1{
+			#adminContainer1{
 				margin: 0 auto;
 				width: 500px;
 				height: 500px;
@@ -24,9 +24,8 @@
 				box-shadow: 10px 10px 5px grey;
 				border-radius: 10px; 
 				border-color: black;
-				border-width: 5px;
 			}
-			.container2{
+			.adminContainer2{
 				margin: 0 auto;
 				background: white;
 				width: 430px;
@@ -35,38 +34,38 @@
 				font-family: sans-serif;
 				border-radius: 10px;
 			}
-			#loginContainer{
+			#adminLoginContainer{
 				padding-left: 15px;
 				padding-top: 30px;
 			}
-			#customerLoginBtn{
+			#adminLoginBtn{
 				float: right; 
 				margin-right: 80px; 
 				width: 100px; 
 				height: 25px; 
 				text-align: center;
-				font-family: sans-serif; 
+				font-family: sans-serif;
 			}
-			#customerLoginBtn:hover{
+			#adminLoginBtn:hover{
 				opacity: 0.6;
 			}
-			#linksNavi{
+			#adminlinksNavi{
 				text-align: center;
-				margin-top: 100px
+				margin-top: 100px;
 			}
 		</style>
 	</head>
   <body>
 
-		<div id = "container1">
-			<h3 id= "headerMessage"> Online Banking </h3>
-			<div class = "container2">
-				<h4 style = "font-size: 25px; padding-top: 25px; text-align: center;"> Customer Login <h4>
-					<form id = "loginContainer" >
+		<div id = "adminContainer1">
+			<h3 id= "adminHeaderMessage"> Online Banking </h3>
+			<div class = "adminContainer2">
+				<h4 style = "font-size: 25px; padding-top: 25px; text-align: center;"> Admin Login <h4>
+					<form id = "adminLoginContainer">
 						
 						<label for="userName">Username:</label>
 						<br>
-						<input type="text" style= "width: 250px;" name="userName"	  autocomplete="off"><br>
+						<input type="text" style= "width: 250px;" id="userName"  autocomplete="off"><br>
 						<br>
 
 						<label for="passWord">Password:</label>
@@ -75,10 +74,10 @@
 					</form>
 					<br>
 
-					<button id = "customerLoginBtn" onclick= "window.location.href = 'customerHomePage.html'">Log In</button>
+					<button id = "adminLoginBtn" onclick= "window.location.href = 'adminPortal.html'">Log In</button>
 
-					<div id = "linksNavi"> 
-						<a href="adminLogin.html">Admin Login</a>
+					<div id = "adminlinksNavi"> 
+						<a href="index.html">Customer Login</a>
 						|
 						<a href=" ">Contact Support </a>
 						|
@@ -87,9 +86,4 @@
 			</div> 
 		</div>
   </body>
-
-	<script> 
-		
-
-	</script>
 </html>

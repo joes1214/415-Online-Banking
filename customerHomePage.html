@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Customer Home Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+		<style>
+			#pageContainer{
+				height: 100vh;
+				width: 100vw;
+				margin: 0 auto;
+			}
+			#userNavigation{
+				margin-top: 20px;
+				height: 100vh;
+				width: 10%;
+				background: rgb(223,23,23);
+				box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 12px;
+				float: left;
+			}
+			#userNaviOptions{	
+				text-align: center;	
+				color: white;
+				font-family: sans-serif;
+				width: 100%;
+				list-style: none;
+				margin-top: 15px;
+				margin-bottom: 15px;
+				font-size: 15px;
+				border-bottom: 1px solid white;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			#userNaviOptions:hover{
+				opacity: 0.6;
+			}
+			#userInterface{ 
+				background: white;
+				height: 100vh;
+				width: 88%;
+				float: right;
+				margin-left: 3px;
+			}
+			.userContainer1{
+				position: absolute;
+				top: 80px;
+				left: 180px; 
+				background: rgb(223,23,23);
+				border-radius: 20px;
+				height: 380px;
+				width: 400px;
+				box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+				font-family: sans-serif;
+				font-size: 20px;
+				color: white;
+				padding-left: 10px;
+				padding-top: 1px;
+			}
+			.userTransactons{
+				background: white;
+				height: 180px;
+				width: 250px;
+				margin: 0 auto;
+				font-family: sans-serif;
+				font-size: 20px;
+				color: white;
+				text-align: center;
+			}
+			.userContainer2{ 
+				position: absolute;
+				top: 70px;
+				right: 10px;
+				background: rgb(223,23,23);
+				border-radius: 20px;
+				height: 780px;
+				width: 400px;
+				box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+			
+				font-family: sans-serif;
+				font-size: 20px;
+				color: white;
+				padding-left: 10px;
+				float: right;
+				margin-top:10px;
+			}
+			.userContainer3{ 
+				position: absolute;
+				top: 70px;
+				left: 590px; 
+				background: rgb(223,23,23);
+				border-radius: 20px;
+				height: 380px;
+				width: 400px;
+				box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+			
+				font-family: sans-serif;
+				font-size: 20px;
+				color: white;
+				padding-left: 10px;
+				padding-top: 1px;
+				margin: 10px;
+				
+			}
+			.userContainer4{ 
+				position: absolute;
+				top: 480px;
+				left: 180px;; 
+				background: rgb(223,23,23);
+				border-radius: 20px;
+				height: 380px;
+				width: 820px;
+				box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+			
+				font-family: sans-serif;
+				font-size: 20px;
+				color: white;
+				padding-left: 10px;
+				padding-top: 1px;
+				float: left;
+			}
+
+		</style>
+	</head>
+	
+	<body>
+		<!--This div is for the full page-->
+		<div id = "pageContainer">
+			
+			<!-- Navigation div -->
+			<div id= "userNavigation">
+				
+				<h3 style= "border-bottom: 1px solid white; padding-top: 15px; text-align: center; font-family:  sans-serif; font-size: 25px;"> Online Banking </h3>
+				
+				<li id = "userNaviOptions" onclick = " "> Reports and Statements</a>
+				<br>
+				<li id = "userNaviOptions" onclick = " "> Transaction History</a>
+				<br>
+				<li id = "userNaviOptions" onclick = " ">Balance Transfer</a>
+				<br>
+				<li id = "userNaviOptions" onclick = " "> Records</a>
+			
+			</div> <!-- End of navigation-->
+
+			<!-- div for all content left to the navigation bar -->
+			<div id = "userInterface">
+				<h3 style= "border-bottom: 2px solid rgb(223,23,23); font-size: 25px; font-family: sans-serif; padding-left: 25px; color: black;"> Welcome customer! </h3>
+				
+				<!-- Balance div -->
+				<div class = "userContainer1">
+						<p id = "userBalance">Your balance is:</p>
+						<p>Recent transactions</p>
+						<div class = "userTransactons" > </div>
+				</div>
+				
+				<div class = "userContainer2">
+						<p>Record Search</p>
+					</div> 
+
+				<div class = "userContainer3">
+					<p>Balance transfer</p>
+				</div> 
+
+				<div class = "userContainer4">
+					<p>Report and Statement</p>
+				</div> 
+			
+			</div> <!--end of right-side interface-->
+		
+		</div> <!--end of full page content div -->
+
+	</body>
+
+	<script>
+		function container1(){
+			document.getElementById("").style.display = "";
+			document.getElementById("myBtn").style.width = "500px";
+			document.getElementById("myBtn").style.width = "500px";
+		}
+		function container2(){
+			
+		}
+		function container3(){
+			
+		}
+		function container4(){
+			
+		}
+	</script>
+</html>

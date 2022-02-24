@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Admin Portal</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+		<style>
+
+			.adminContainer1{
+				margin: 0 auto;
+				position: relative;
+				height: 85vh;
+				width: 85vw;
+				background: rgb(223,23,23);
+				box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 12px;	
+			}
+			.adminContainer2{	
+				margin-left: 100px;
+				position: absolute;
+				top: 8%;
+				background: white;
+				font-family: sans-serif;
+				height: 85%;
+				width: 85%;
+				border-radius: 12px; 
+			}
+			#adminSearch{
+				margin-top: 10px;
+				width: 60%;
+				margin-left: 150px;
+				font-family: sans-serif;
+				font-size: 17px;
+				border-width: 3px;
+				border-radius: 8px;
+				border-color: rgb(223,23,23);;
+				color: black;
+			}
+			#adminSearchBtn{
+				background: rgb(223,23,23);
+				color: white;
+				font-size: 17px;
+				border-width: 3px;
+				border-radius: 8px;
+				border-color: white;
+			}
+			#adminSearchBtn:hover{
+				opacity: 0.6;
+			}
+			#adminResults{
+
+			}
+			#adminLogoutBtn{ 
+				width: 150px; 
+				height: 30px; 
+				text-align: center;
+				font-family: sans-serif; 
+				color: white;
+				background: black;
+				font-size: 17px;
+				border-width: 3px;
+				border-radius: 8px;
+				border-color: black;
+				position: absolute;
+			 	bottom: 9%;
+				left: 80%;
+			}
+			#adminLogoutBtn:hover{
+				opacity: 0.6;
+			}
+	
+		</style>
+	</head>
+	
+	<body>
+		<!--Page container --> 
+
+			<h3 style= "border-bottom: 2px solid rgb(223,23,23); font-size: 25px; font-family: sans-serif; padding-left: 25px; color: black;"> Welcome Admin! </h3>
+			<!-- Container 1 --> 	
+			<div class = "adminContainer1">
+				<!-- Container 2-->  
+				<div class = "adminContainer2">
+					<!-- Admin Search Bar -->
+						<input id = "adminSearch" type="text" placeholder="Search.." name="search">
+      			<button id = "adminSearchBtn" type="submit" onclick= " " >Submit</button>
+						<div id = "adminResults">
+									
+						</div> 
+				</div> 
+					<!--Log out button --> 
+					<buttom id = "adminLogoutBtn" >Log out</button>
+			</div> 	
+
+	</body>
+
+	<script>
+		
+	</script>
+</html>
